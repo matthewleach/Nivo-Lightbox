@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nivo Lightbox</title>
+
+    <!-- Stylesheet
+    ================================================== -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <!-- Styles specific for the lightbox -->
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/core-style.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/presentation-style.css">
+    <!-- - - - - - - - - - - - - - - - - -->
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+
+<body>
+
+
+    <!--
+    
+    Notes on data types: 
+      data-lightbox-gallery = Name of the Gallery. 
+                              Apply the *same* gallery name to connect multiple photos. 
+                              Apply *different* gallery names for separate galleries. 
+    
+    Title: 
+    It’s supposed to provide additional / advisory information in a way to expand on the meaning of the link. In this case, it will add a title under the images when they are enlarged. 
+           
+    -->
+
+    <!-- Photo Gallery -->
+    <div class="photo-gallery container">
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <h1>Gallery #1</h1>
+            </div>
+        </div>
+        <!-- Gallery #1: First Row of 3 Images -->
+        <div class="row">
+            <div class="col-4">
+                <a data-lightbox-gallery="gallery1" href="img/gallery1.jpg" title="">
+                    <img src="img/gallery1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-4">
+                <a data-lightbox-gallery="gallery1" href="img/gallery2.jpg" title="">
+                    <img src="img/gallery2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-4">
+                <a data-lightbox-gallery="gallery1" href="img/gallery3.jpg" title="">
+                    <img src="img/gallery3.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+        <!-- Gallery #1: Second Row of 3 (TALL) Images -->
+        <div class="row">
+            <div class="col-4">
+                <a data-lightbox-gallery="gallery1" href="img/gallery-tall1.jpg" title="">
+                    <img src="img/gallery-tall1.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-4">
+                <a data-lightbox-gallery="gallery1" href="img/gallery-tall2.jpg" title="">
+                    <img src="img/gallery-tall2.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-4">
+                <a data-lightbox-gallery="gallery1" href="img/gallery-tall3.jpg" title="">
+                    <img src="img/gallery-tall3.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <h1>Gallery #2</h1>
+            </div>
+        </div>
+        <!-- Gallery #2: Second Row of 3 (TALL) Images -->
+        <div class="row">
+            <div class="col-4">
+                <a data-lightbox-gallery="gallery2" href="img/gallery4.jpg" title="">
+                    <img src="img/gallery4.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-4">
+                <a data-lightbox-gallery="gallery2" href="img/gallery5.jpg" title="">
+                    <img src="img/gallery5.jpg" alt="" />
+                </a>
+            </div>
+            <div class="col-4">
+                <a data-lightbox-gallery="gallery2" href="img/gallery6.jpg" title="">
+                    <img src="img/gallery6.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+
+</body>
+
+</html>
